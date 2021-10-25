@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "services"
+version = "0.1.0"
+description = ""
+authors = ["Anton <Kondrahin210@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "~0.70.0"
+uvicorn = "~0.15.0"
+python-multipart = "0.0.5"
+pymongo = {version = "^3.12.1", extras=["srv"]}
+celery = {version="^5.1.2", extras=["redis"]}
+
+[tool.poetry.dev-dependencies]
+loguru = "~0.5.3"
+pytest = "~6.2.5"
+pytest-celery = ""
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
